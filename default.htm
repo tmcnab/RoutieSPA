@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Routie &hearts; Bootstrap</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+</head>
+<body>
+    <main class="container">
+        <ul class="nav nav-tabs nav-justified" id="paging">
+            <li><a href="#/home">Home</a></li>
+            <li><a href="#/profile">Profile</a></li>
+            <li><a href="#/messages">Messages</a></li>
+        </ul>
+        <section id="pvContent"></section>
+    </main>
+
+    <!-- Tab Content Templates -->
+    <template data-href="/home">
+        <div style="padding:20px;">
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at bibendum dolor. Suspendisse nec justo enim. Sed mollis neque magna, eget mattis lorem aliquet ac.</p>
+            <p>Sed sed malesuada sem. Duis mollis adipiscing turpis, feugiat pretium eros. Curabitur ac nulla at enim sollicitudin vulputate. Nam sed ligula sed lectus viverra placerat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin nec malesuada eros. Donec imperdiet ante eu nisl tempor, egestas placerat nulla cursus.</p>
+            <p>Phasellus eu augue a justo molestie pharetra non fermentum lorem. Pellentesque aliquam augue sem, ullamcorper pellentesque nulla interdum vitae. Fusce ultrices arcu quis sapien adipiscing, ac lacinia nisl lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu ipsum orci. Duis malesuada consequat ultrices. Suspendisse vulputate dolor sed ante porta, vel venenatis diam sodales. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse adipiscing interdum dictum. Donec faucibus tellus et est pellentesque ornare. Sed placerat sapien erat, et tincidunt orci dapibus mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc gravida lacus sem, sit amet vestibulum nibh adipiscing eu. Phasellus vel tempor nibh. Curabitur cursus ullamcorper dictum. Nunc pretium, leo in malesuada ultrices, arcu erat interdum felis, eget auctor risus tellus vel nulla.</p>
+        </div>
+    </template>
+    <template data-href="/profile">
+        <div class="row" style="padding:20px">
+            <div class="col-lg-3">
+                <span class="thumbnail">
+                    <img src="http://placekitten.com/g/200/300" />
+                </span>
+            </div>
+            <div class="col-lg-9">
+                <h2>Samuel P. Ipsum</h2>
+                <h3>Ace Designer</h3>
+                <hr />
+                <p>Spent two years testing the market for hugs in Washington, DC. A real dynamo when it comes to building electric trains in Deltona, FL. Was quite successful at marketing toy soldiers for the underprivileged. In 2009 I was testing the market for shaving cream in Naples, FL. Had moderate success investing in etch-a-sketches in the financial sector. Won several awards for promoting easy-bake-ovens in Mexico.</p>
+            </div>
+        </div>
+    </template>
+    <template data-href="/messages">
+        <div class="row" style="padding:10px;">
+            <nav class="col-lg-3">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="badge">3</span>
+                        <a href="#/messages/1">Bob Jones</a>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">1</span>
+                        <a href="#/messages/2">Curly Katz</a>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge">1k+</span>
+                        <a href="#/messages/3">Johnny D.</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="col-lg-7">
+                <blockquote id="msgContent"></blockquote>
+            </section>
+        </div>
+    </template>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/routie.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
